@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Admin</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="admin.html">Admin</a>
+    <a href="books.html">Books</a>
+  </nav>
+  <form id="book-form">
+    <input type="text" id="title" placeholder="Book Title" required />
+    <input type="text" id="author" placeholder="Author Name" required />
+    <select id="category" required>
+      <option value="fiction">Fiction</option>
+      <option value="comedy">Comedy</option>
+      <option value="technical">Technical</option>
+    </select>
+    <button type="submit">Add Book</button>
+  </form>
+  <div id="books-grid"></div>
+  <script src="js/admin.js"></script>
+</body>
+</html>
+
